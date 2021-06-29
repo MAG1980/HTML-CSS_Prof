@@ -33,6 +33,10 @@ $text: #222222;
     font-style: normal;
 }
 
+.accent__text {
+    color: $accent;
+}
+
 .container {
     margin: 0 auto;
     max-width: 1140px;
@@ -374,7 +378,4 @@ $text: #222222;
         font-weight: 300;
         letter-spacing: 0.025em;
     }
-}
-.accent__text {
-    color: $accent;
 }
