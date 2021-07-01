@@ -122,9 +122,14 @@ $text: #222222;
         line-height: 26px;
         font-weight: 700;
         text-transform: uppercase;
+        &_list {
+            position: relative;
+            &:hover .header__link_box {
+                display: flex;
+            }
+        }
     }
     &__link {
-        position: relative;
         text-decoration: none;
         padding: 19px;
         color: $text;
@@ -132,12 +137,15 @@ $text: #222222;
             color: $accent;
         }
         &_box {
-            display: flex;
+            display: none;
             position: absolute;
             padding: 20px;
             border: 1px solid #e8e8e8;
             background-color: #ffffff;
             border-radius: 5px;
+            &:last-of-type {
+                margin-right: 0;
+            }
             &::before {
                 content: "";
                 display: block;
@@ -153,6 +161,7 @@ $text: #222222;
             }
         }
         &_list {
+            margin-right: 46px;
         }
         &_title {
             font-family: Lato;
@@ -181,7 +190,16 @@ $text: #222222;
             }
         }
     }
+    &__dropdown_right:hover &__link_box {
+        right: 0;
+        left: auto;
+        &::before {
+            right: 52px;
+            left: auto;
+        }
+    }
 }
+
 .top {
     min-height: 613px;
     display: flex;
