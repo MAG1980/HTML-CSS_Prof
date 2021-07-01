@@ -279,9 +279,7 @@
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between;
-    height: 802px;
-    overflow: hidden; }
+            justify-content: space-between; }
   .sections__column {
     width: 49%; }
   .sections__item {
@@ -317,8 +315,8 @@
   height: 542px; }
 
 #sections__ACCESORIES {
-  background-image: url(../img/ACCESORIES.jpg);
-  height: 240px; }
+  background: #dadad2 url(../img/ACCESORIES.jpg) no-repeat;
+  height: 261px; }
 
 #sections__forWomen {
   background-image: url(../img/women_in_dress.webp);

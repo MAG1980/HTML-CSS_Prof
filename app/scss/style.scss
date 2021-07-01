@@ -285,8 +285,6 @@ $text: #222222;
     &__row {
         display: flex;
         justify-content: space-between;
-        height: 802px;
-        overflow: hidden;
     }
     &__column {
         width: 49%;
@@ -329,8 +327,8 @@ $text: #222222;
     height: 542px;
 }
 #sections__ACCESORIES {
-    background-image: url(../img/ACCESORIES.jpg);
-    height: 240px;
+    background: #dadad2 url(../img/ACCESORIES.jpg) no-repeat;
+    height: 261px;
 }
 #sections__forWomen {
     background-image: url(../img/women_in_dress.webp);
