@@ -124,11 +124,60 @@ $text: #222222;
         text-transform: uppercase;
     }
     &__link {
+        position: relative;
         text-decoration: none;
         padding: 19px;
         color: $text;
         &:hover {
             color: $accent;
+        }
+        &_box {
+            position: absolute;
+            padding: 20px;
+            border: 1px solid #e8e8e8;
+            background-color: #ffffff;
+            border-radius: 5px;
+            &::before {
+                content: "";
+                display: block;
+                width: 8px;
+                height: 8px;
+                position: absolute;
+                top: -5px;
+                left: 32px;
+                transform: rotate(45deg);
+                background-color: #ffffff;
+                border-left: 1px solid #e8e8e8;
+                border-top: 1px solid #e8e8e8;
+            }
+        }
+        &_list {
+        }
+        &_title {
+            font-family: Lato;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+            color: #232323;
+            border-bottom: 1px solid #e8e8e8;
+            width: 235px;
+            padding-bottom: 8px;
+            margin-bottom: 8px;
+        }
+        &_link {
+            display: block;
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 28px;
+            font-weight: 400;
+            letter-spacing: 0.025em;
+            color: #646464;
+            // padding: 10px 0;
+            cursor: pointer;
+            &:hover {
+                color: $accent;
+            }
         }
     }
 }
