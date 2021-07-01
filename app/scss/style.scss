@@ -132,6 +132,7 @@ $text: #222222;
             color: $accent;
         }
         &_box {
+            display: flex;
             position: absolute;
             padding: 20px;
             border: 1px solid #e8e8e8;

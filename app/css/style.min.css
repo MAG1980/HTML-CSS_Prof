@@ -133,6 +133,9 @@
   .header__link:hover {
     color: #f16d7f; }
   .header__link_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     position: absolute;
     padding: 20px;
     border: 1px solid #e8e8e8;
