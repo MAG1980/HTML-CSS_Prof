@@ -1,38 +1,6 @@
 $accent: #f16d7f;
 $text: #222222;
 
-@import "normalize.css";
-
-@font-face {
-    font-family: "Lato, sans-serif";
-    src: url("../fonts/Lato-Light.eot");
-    src: local("Lato Light"), local("Lato-Light"), url("../fonts/Lato-Light.eot?#iefix") format("embedded-opentype"),
-        url("../fonts/Lato-Light.woff2") format("woff2"), url("../fonts/Lato-Light.woff") format("woff"),
-        url("../fonts/Lato-Light.ttf") format("truetype");
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Lato, sans-serif";
-    src: url("../fonts/Lato-Black.eot");
-    src: local("Lato Black"), local("Lato-Black"), url("../fonts/Lato-Black.eot?#iefix") format("embedded-opentype"),
-        url("../fonts/Lato-Black.woff2") format("woff2"), url("../fonts/Lato-Black.woff") format("woff"),
-        url("../fonts/Lato-Black.ttf") format("truetype");
-    font-weight: 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Lato, sans-serif";
-    src: url("../fonts/Lato-Bold.eot");
-    src: local("Lato Bold"), local("Lato-Bold"), url("../fonts/Lato-Bold.eot?#iefix") format("embedded-opentype"),
-        url("../fonts/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato-Bold.woff") format("woff"),
-        url("../fonts/Lato-Bold.ttf") format("truetype");
-    font-weight: bold;
-    font-style: normal;
-}
-
 .accent__text {
     color: $accent;
 }
@@ -62,6 +30,10 @@ $text: #222222;
         line-height: 51px;
         text-decoration: none;
         margin-right: 37px;
+        & span {
+            color: $accent;
+            font-weight: 900;
+        }
     }
     &__img {
         vertical-align: middle;
@@ -79,7 +51,9 @@ $text: #222222;
             width: 87px;
             background-image: linear-gradient(180deg, #f9f9f9 0%, #f5f5f5 100%);
             border: 1px solid #e6e6e6;
+            border-right: none;
             border-radius: 3px 0px 0px 3px;
+            cursor: pointer;
         }
         &_dropdown {
             width: 20px;
@@ -87,6 +61,7 @@ $text: #222222;
             background-position: center;
             background-repeat: no-repeat;
             border: 1px solid #e6e6e6;
+            cursor: pointer;
         }
         &_text {
             padding-left: 16px;
@@ -99,7 +74,7 @@ $text: #222222;
             color: #a4a4a4;
             border-top: 0;
             border-bottom: 0;
-            border-left: 1px solid #e6e6e6;
+            border-left: none;
             border-right: 1px solid #e6e6e6;
         }
         &_scope {
@@ -109,6 +84,7 @@ $text: #222222;
             background-repeat: no-repeat;
             border: none;
             background-color: #fff;
+            cursor: pointer;
         }
     }
     &__right {
@@ -129,13 +105,13 @@ $text: #222222;
         font-weight: 400;
         letter-spacing: 0.025em;
         color: #ffffff;
+        cursor: pointer;
     }
     &__account:hover {
         background-color: #ffff;
         color: $accent;
     }
     &__nav {
-        min-height: 50px;
     }
     &__menu {
         display: flex;
@@ -182,12 +158,20 @@ $text: #222222;
         align-self: center;
         text-transform: uppercase;
         font-family: Lato;
-        line-height: 1.2;
+        line-height: 0.74;
         font-weight: 900;
         letter-spacing: 0.025em;
         color: $text;
         &_one {
             font-size: 60px;
+            margin-bottom: 20px;
+
+            & span {
+                display: inline-block;
+                width: 5px;
+                height: 100%;
+                background-color: $accent;
+            }
         }
         &_two {
             font-size: 40px;
@@ -197,10 +181,12 @@ $text: #222222;
 
 .sections {
     background-color: #fff;
+    padding-top: 98px;
     &__row {
-        padding-top: 98px;
         display: flex;
         justify-content: space-between;
+        height: 802px;
+        overflow: hidden;
     }
     &__column {
         width: 49%;
@@ -208,7 +194,11 @@ $text: #222222;
     &__item {
         background-repeat: no-repeat;
         background-size: cover;
+        cursor: pointer;
         margin-bottom: 20px;
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
     &__label {
         margin-top: 26px;
@@ -252,6 +242,7 @@ $text: #222222;
 }
 .fetured {
     font-family: Lato, sans-serif;
+    padding-top: 100px;
     &__heading {
         text-align: center;
         margin-bottom: 60px;
@@ -270,7 +261,6 @@ $text: #222222;
         color: #9f9f9f;
     }
     &__content {
-        margin-bottom: 20px;
     }
     &__row {
         display: flex;
@@ -281,6 +271,7 @@ $text: #222222;
         display: flex;
         flex-direction: column;
         width: 23%;
+        cursor: pointer;
         &:hover {
             box-shadow: 0px 5px 8px 0 rgba(0, 0, 0, 0.16);
         }
@@ -308,6 +299,8 @@ $text: #222222;
         padding-bottom: 132px;
     }
     &__link {
+        display: inline-block;
+        margin-top: 58px;
         background-color: $accent;
         padding: 18px 24px;
         font-size: 16px;
@@ -319,6 +312,10 @@ $text: #222222;
             content: url(../img/arrow_right.png);
             margin-left: 9px;
         }
+        &:hover {
+            color: $accent;
+            background-color: #fff;
+        }
     }
 }
 .offer {
@@ -329,9 +326,10 @@ $text: #222222;
         width: 67%;
         background-image: url(../img/offer_image.webp);
         background-repeat: no-repeat;
+        background-size: cover;
     }
     &__text {
-        padding: 146px 0 305px 40px;
+        padding: 146px 0 0 40px;
         font-family: Lato, sans-serif;
         line-height: 1.2;
         font-weight: 700;
@@ -353,31 +351,43 @@ $text: #222222;
         flex-direction: column;
         background-color: #222224;
         width: 33%;
-        justify-content: flex-end;
+        padding: 40px;
     }
     &__card {
-        border: 1px solid blue;
         display: flex;
         flex-direction: column;
+        &_top {
+            display: flex;
+            align-items: center;
+        }
     }
     &__picture {
+        width: 25%;
     }
-    &__desription {
-        font-family: Lato, sans-serif;
-        color: #fbfbfb;
-        width: 70%;
+    &__card_bottom {
+        display: flex;
+        justify-content: flex-end;
     }
     &__header {
+        font-family: Lato;
         font-size: 20px;
         line-height: 1.2;
         font-weight: 700;
         letter-spacing: 0.025em;
+        color: #fbfbfb;
+        padding-left: 35px;
+        width: 75%;
     }
     &__descr {
+        font-family: Lato;
         font-size: 14px;
         line-height: 24px;
         font-weight: 300;
         letter-spacing: 0.025em;
+        color: #fbfbfb;
+        width: 66%;
+        padding: 0 0 0 35px;
+        margin: 0;
     }
 }
 
@@ -388,13 +398,20 @@ $text: #222222;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
+
     &__wrapper {
         display: flex;
+        padding: 0 72px 0;
+        margin-top: 111px;
+    }
+    &__vertical_line {
+        width: 50%;
+        height: 100%;
+        border-right: 1px solid #ffffff;
     }
     &__quote {
-        width: 50%;
-        padding: 123px 72px 156px 0;
-        border-right: 1px solid #ffffff;
+        margin-top: 123px;
+        display: flex;
     }
     &__portrait {
     }
@@ -402,25 +419,237 @@ $text: #222222;
         border-radius: 50%;
     }
     &__text {
-        padding-left: 28%;
+        padding-left: 28px;
+        padding-right: 72px;
         font-family: Lato;
         font-size: 16px;
         line-height: 26px;
         font-weight: 400;
+        margin-bottom: 40px;
     }
     &__quote_text {
         font-style: italic;
         letter-spacing: 0.025em;
+        margin: 0 0 19px 0;
     }
     &__signature {
         font-family: Lato;
         font-size: 16px;
-        line-height: 26px;
         font-weight: 700;
-        letter-spacing: 0.025em;
+        line-height: 1.63;
+        letter-spacing: 0.4px;
         color: $accent;
+        margin: 0;
+    }
+    &__place {
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.3px;
+        font-weight: 300;
+        margin: 0 0 40px;
+    }
+    &__lister {
+        display: flex;
+        justify-content: start;
+        margin-bottom: 156px;
+        &_item {
+            width: 38px;
+            height: 4px;
+            margin-right: 13px;
+            background-color: #d6d6d6;
+            &:hover {
+                background-color: $accent;
+            }
+        }
     }
     &__form {
         width: 50%;
+    }
+    &__heading {
+        margin-top: 148px;
+        margin-bottom: 14px;
+        font-size: 24px;
+        line-height: 54px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.025em;
+        text-align: center;
+        font-family: sans-serif;
+    }
+    &__heading_text {
+        margin: 0;
+        font-size: 14px;
+        line-height: 24px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    &__form {
+        &_input {
+            margin-top: 35px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    &__email,
+    &__button {
+        font-family: sans-serif;
+        border: none;
+    }
+    &__email {
+        padding-left: 28px;
+        background-color: #e1e1e1;
+        border-radius: 23px 0 0 23px;
+        width: 282px;
+    }
+    &__button {
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: $accent;
+        border-radius: 0px 23px 23px 0px;
+        font-size: 14px;
+        line-height: 54px;
+        font-weight: 400;
+        letter-spacing: 0.025em;
+        color: #ffffff;
+        &:hover {
+            background-color: #fff;
+            color: $accent;
+        }
+    }
+}
+
+.footer {
+    .footer__top {
+        padding: 110px 0 100px;
+        display: flex;
+        &_left {
+            width: 37%;
+        }
+        &_right {
+            width: 57%;
+        }
+        &_content {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &__brand {
+        &_text {
+            padding: 20px 0 12px 13px;
+            font-family: Lato;
+            font-size: 27px;
+            line-height: 32px;
+            font-weight: 300;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 0.025em;
+            color: #3e3e40;
+        }
+        &_text span {
+            font-weight: 900;
+            color: $accent;
+        }
+    }
+    &__logo {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 30px;
+    }
+    &__text {
+        font-family: Lato;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 300;
+        letter-spacing: 0.025em;
+        color: #898989;
+        &_first {
+            margin: 0 0 35px;
+        }
+        &_second {
+            margin: 0;
+        }
+    }
+    &__top_right {
+        display: flex;
+    }
+    &__column {
+        width: 33%;
+        &_heading a {
+            text-decoration: none;
+            font-family: Lato;
+            font-size: 18px;
+            line-height: 26px;
+            font-weight: 700;
+            letter-spacing: 0.025em;
+            color: $accent;
+            margin-bottom: 45px;
+            &:hover {
+                color: #898989;
+            }
+        }
+        &_list {
+            list-style-type: none;
+            padding: 0;
+        }
+        &_item {
+            & a {
+                font-family: Lato;
+                font-size: 16px;
+                line-height: 42px;
+                font-weight: 400;
+                letter-spacing: 0.025em;
+                color: #898989;
+                text-decoration: none;
+                display: block;
+                &:hover {
+                    color: $accent;
+                }
+            }
+        }
+    }
+    &__bottom {
+        background-color: #e6e6e6;
+        &_container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 80px;
+        }
+    }
+    &__copyright {
+        font-family: Lato;
+        font-size: 16px;
+        line-height: 42px;
+        font-weight: 400;
+        letter-spacing: 0.025em;
+        color: #7a7a7a;
+    }
+    &__icons {
+        display: flex;
+        justify-content: end;
+    }
+    &__icon {
+        width: 32px;
+        height: 32px;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 7px;
+        &:hover {
+            background-color: $accent;
+        }
+        &:hover .footer__link {
+            color: #ffffff;
+        }
+    }
+    &__link {
+        font-size: 16px;
+        line-height: 42px;
+        font-weight: 400;
+        letter-spacing: 0.025em;
+        color: #b2b2b2;
+        text-decoration: none;
+        cursor: pointer;
     }
 }
