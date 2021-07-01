@@ -335,7 +335,6 @@
   .fetured__header {
     margin: 0;
     font-size: 30px;
-    line-height: 54px;
     font-weight: 700;
     letter-spacing: 0.025em; }
   .fetured__text {
@@ -505,7 +504,6 @@
     border-radius: 50%; }
   .subscribe__text {
     padding-left: 28px;
-    padding-right: 72px;
     font-family: Lato;
     font-size: 16px;
     line-height: 26px;
