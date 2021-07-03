@@ -1,3 +1,6 @@
+p {
+  margin: 0; }
+
 .accent__text {
   color: #f16d7f; }
 
@@ -350,6 +353,19 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-bottom: 40px; }
+  .fetured__item {
+    width: 23%;
+    position: relative; }
+    .fetured__item:hover {
+      -webkit-box-shadow: 0px 5px 8px 0 rgba(0, 0, 0, 0.16);
+              box-shadow: 0px 5px 8px 0 rgba(0, 0, 0, 0.16); }
+    .fetured__item:hover .fetured__image {
+      -webkit-filter: brightness(0.5);
+              filter: brightness(0.5); }
+    .fetured__item:hover .fetured__add {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
   .fetured__product {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -358,12 +374,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 23%;
+    width: 100%;
     text-decoration: none;
     cursor: pointer; }
-    .fetured__product:hover {
-      -webkit-box-shadow: 0px 5px 8px 0 rgba(0, 0, 0, 0.16);
-              box-shadow: 0px 5px 8px 0 rgba(0, 0, 0, 0.16); }
   .fetured__image {
     margin-bottom: 20px; }
   .fetured__name {
@@ -379,6 +392,32 @@
     text-transform: uppercase;
     color: #f16d7f;
     margin: 0 0 20px 15px; }
+  .fetured__add {
+    display: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 98px; }
+    .fetured__add_link {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      text-decoration: none;
+      color: #fff;
+      padding: 10px;
+      border: 1px solid #fff; }
+      .fetured__add_link:hover {
+        -webkit-box-shadow: 0 0 10px #fff;
+                box-shadow: 0 0 10px #fff; }
+    .fetured__add_text {
+      margin-left: 8px;
+      font-size: 13px;
+      font-weight: bold; }
   .fetured__button {
     text-align: center;
     padding-bottom: 132px; }
