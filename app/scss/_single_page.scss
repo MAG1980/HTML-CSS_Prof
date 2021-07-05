@@ -177,16 +177,15 @@ h2 {
         &_item {
             width: 27%;
         }
+        &_picture {
+            padding: 0 10px;
+        }
         &_text {
-            padding: 21px 0;
+            padding: 21px 10px;
             font-family: Lato;
             font-size: 16px;
             font-weight: bold;
             color: #ef5b70;
-            &::before {
-                content: url(../img/add_to_cart.svg);
-                margin-right: 15px;
-            }
         }
     }
     &__property {
@@ -203,5 +202,35 @@ h2 {
         color: #4d4d4d;
         text-transform: uppercase;
         margin-bottom: 72px;
+    }
+}
+.fetured {
+    &__product {
+        &_box {
+            height: 280px;
+            background-color: rgba(129, 129, 129, 0.07);
+            margin-bottom: 20px;
+        }
+        &_image {
+            height: 90%;
+            padding-top: 10px;
+            object-fit: contain;
+        }
+    }
+}
+
+.fetured__name,
+.fetured__price {
+    font-family: lato;
+    color: #6f6e6e;
+    font-size: 14px;
+    text-align-last: left;
+    margin-right: 15px;
+}
+.fetured__price {
+    display: flex;
+    justify-content: space-between;
+    &_image {
+        width: 71px;
     }
 }
