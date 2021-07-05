@@ -1,5 +1,5 @@
-$accent: #f16d7f;
-$text: #222222;
+@import "_single_page";
+@import "_variables";
 
 p {
     margin: 0;
@@ -377,6 +377,10 @@ p {
         &:hover .fetured__image {
             filter: brightness(0.5);
         }
+        &:hover .fetured__product {
+            filter: brightness(0.5);
+            background-blend-mode: darken;
+        }
         &:hover .fetured__add {
             display: flex;
         }
@@ -404,7 +408,7 @@ p {
         font-weight: 700;
         text-transform: uppercase;
         color: $accent;
-        margin: 0 0 20px 15px;
+        margin: 0 15px 20px 15px;
     }
     &__add {
         display: none;
