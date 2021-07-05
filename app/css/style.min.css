@@ -601,6 +601,10 @@ p {
     .fetured__item:hover .fetured__image {
       -webkit-filter: brightness(0.5);
               filter: brightness(0.5); }
+    .fetured__item:hover .fetured__product {
+      -webkit-filter: brightness(0.5);
+              filter: brightness(0.5);
+      background-blend-mode: darken; }
     .fetured__item:hover .fetured__add {
       display: -webkit-box;
       display: -ms-flexbox;

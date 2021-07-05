@@ -377,6 +377,10 @@ p {
         &:hover .fetured__image {
             filter: brightness(0.5);
         }
+        &:hover .fetured__product {
+            filter: brightness(0.5);
+            background-blend-mode: darken;
+        }
         &:hover .fetured__add {
             display: flex;
         }
