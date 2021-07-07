@@ -118,6 +118,7 @@ p {
         font-weight: 400;
         letter-spacing: 0.025em;
         color: #ffffff;
+        border: 1px solid $accent;
         cursor: pointer;
     }
     &__account:hover {
@@ -213,6 +214,7 @@ p {
         &_link {
             display: block;
             text-decoration: none;
+            font-family: Lato;
             font-size: 14px;
             line-height: 28px;
             font-weight: 400;

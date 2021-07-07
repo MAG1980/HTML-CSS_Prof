@@ -38,9 +38,12 @@ h2 {
       .arrivals__breadcrumbs_item::after {
         content: "/"; }
       .arrivals__breadcrumbs_item_active {
-        color: #f16d7f; }
+        color: #f16d7f;
+        font-weight: 900; }
     .arrivals__breadcrumbs_link {
       text-decoration: none; }
+      .arrivals__breadcrumbs_link:hover {
+        color: #f16d7f; }
 
 .model {
   background-color: #f7f7f7; }
@@ -356,6 +359,7 @@ p {
   font-weight: 400;
   letter-spacing: 0.025em;
   color: #ffffff;
+  border: 1px solid #f16d7f;
   cursor: pointer; }
 
 .header__account:hover {
@@ -447,6 +451,7 @@ p {
   .header__link_link {
     display: block;
     text-decoration: none;
+    font-family: Lato;
     font-size: 14px;
     line-height: 28px;
     font-weight: 400;

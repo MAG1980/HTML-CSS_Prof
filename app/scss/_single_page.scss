@@ -36,10 +36,14 @@ h2 {
             }
             &_active {
                 color: $accent;
+                font-weight: 900;
             }
         }
         &_link {
             text-decoration: none;
+            &:hover {
+                color: $accent;
+            }
         }
     }
 }
