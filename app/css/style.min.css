@@ -269,6 +269,7 @@ p {
   font-size: 27px;
   line-height: 32px;
   font-weight: 300;
+  color: #222222;
   text-transform: uppercase;
   letter-spacing: 0.025em;
   width: 59px;
@@ -673,9 +674,9 @@ p {
     font-weight: 700;
     letter-spacing: 0.025em;
     text-decoration: none;
-    color: #ffffff; }
-    .fetured__link::after {
-      content: url(../img/arrow_right.png);
+    color: #ffffff;
+    border: 1px solid #f16d7f; }
+    .fetured__link_ml {
       margin-left: 9px; }
     .fetured__link:hover {
       color: #f16d7f;
@@ -868,7 +869,8 @@ p {
     line-height: 54px;
     font-weight: 400;
     letter-spacing: 0.025em;
-    color: #ffffff; }
+    color: #ffffff;
+    border: 1px solid #f16d7f; }
     .subscribe__button:hover {
       background-color: #fff;
       color: #f16d7f; }

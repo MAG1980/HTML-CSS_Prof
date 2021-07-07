@@ -28,6 +28,7 @@ p {
         font-size: 27px;
         line-height: 32px;
         font-weight: 300;
+        color: #222222;
         text-transform: uppercase;
         letter-spacing: 0.025em;
         width: 59px;
@@ -450,8 +451,8 @@ p {
         letter-spacing: 0.025em;
         text-decoration: none;
         color: #ffffff;
-        &::after {
-            content: url(../img/arrow_right.png);
+        border: 1px solid $accent;
+        &_ml {
             margin-left: 9px;
         }
         &:hover {
@@ -652,6 +653,7 @@ p {
         font-weight: 400;
         letter-spacing: 0.025em;
         color: #ffffff;
+        border: 1px solid $accent;
         &:hover {
             background-color: #fff;
             color: $accent;
