@@ -373,7 +373,7 @@ h2 {
         font-size: 14px;
         line-height: 20px;
         font-weight: 400;
-        padding: 14px 0;
+        padding: 0 0 14px 0;
         text-transform: uppercase;
         color: #6f6e6e; }
     .products__select_link {
@@ -515,9 +515,18 @@ h2 {
         color: #f16d7f; }
 
 #price__range {
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 18px; }
   #price__range_label {
-    width: 100%; }
+    width: 100%;
+    padding: 0; }
+  #price__range_output {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #6f6e6e; }
+    #price__range_output::before {
+      content: "$"; }
 
 p {
   margin: 0; }

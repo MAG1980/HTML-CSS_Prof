@@ -136,7 +136,7 @@
                 font-size: 14px;
                 line-height: 20px;
                 font-weight: 400;
-                padding: 14px 0;
+                padding: 0 0 14px 0;
                 text-transform: uppercase;
                 color: #6f6e6e;
             }
@@ -285,7 +285,18 @@
 }
 #price__range {
     width: 100%;
+    margin-bottom: 18px;
     &_label {
         width: 100%;
+        padding: 0;
+    }
+    &_output {
+        font-size: 14px;
+        line-height: 26px;
+        font-weight: 400;
+        color: #6f6e6e;
+        &::before {
+            content: "$";
+        }
     }
 }
