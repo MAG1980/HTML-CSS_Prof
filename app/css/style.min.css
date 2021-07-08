@@ -30,13 +30,17 @@ h2 {
     display: flex;
     list-style-type: none; }
     .arrivals__breadcrumbs_item {
+      position: relative;
       font-size: 14px;
       line-height: 20px;
       font-weight: 300;
       text-transform: uppercase;
-      color: #636363; }
+      color: #636363;
+      margin-left: 15px; }
       .arrivals__breadcrumbs_item::after {
-        content: "/"; }
+        content: "/";
+        position: absolute;
+        right: -10px; }
       .arrivals__breadcrumbs_item_active {
         color: #f16d7f;
         font-weight: 900; }

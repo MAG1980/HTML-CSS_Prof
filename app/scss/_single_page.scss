@@ -26,13 +26,17 @@ h2 {
         display: flex;
         list-style-type: none;
         &_item {
+            position: relative;
             font-size: 14px;
             line-height: 20px;
             font-weight: 300;
             text-transform: uppercase;
             color: #636363;
+            margin-left: 15px;
             &::after {
                 content: "/";
+                position: absolute;
+                right: -10px;
             }
             &_active {
                 color: $accent;
