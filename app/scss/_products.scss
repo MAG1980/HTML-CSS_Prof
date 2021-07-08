@@ -47,7 +47,7 @@
         }
         &_details {
             padding: 20px;
-            border: 1px solid #e8e8e8;
+            // border: 1px solid #e8e8e8;
             background-color: #ffffff;
             border-radius: 5px;
             &::before {
@@ -63,8 +63,6 @@
                 border-left: 1px solid #e8e8e8;
                 border-top: 1px solid #e8e8e8;
             }
-        }
-        &_box {
         }
         &_list {
             margin-right: 46px;
@@ -109,12 +107,64 @@
     }
     &__header {
         height: 165px;
+        margin-bottom: 48px;
     }
     &__select {
+        display: flex;
+        justify-content: space-between;
         height: 115px;
+        padding-bottom: 43px;
+        &_area {
+            width: 31%;
+        }
+        &_heading {
+            font-family: $ff;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #6f6e6e;
+            margin-bottom: 10px;
+        }
+        &_parameters {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+            & label {
+                width: 25%;
+                font-family: $ff;
+                font-size: 14px;
+                line-height: 20px;
+                font-weight: 400;
+                padding: 14px 0;
+                text-transform: uppercase;
+                color: #6f6e6e;
+            }
+        }
+        &_link {
+            position: relative;
+            text-decoration: none;
+            font-family: $ff;
+            font-size: 14px;
+            line-height: 26px;
+            font-weight: 400;
+            color: #6f6e6e;
+            margin-right: 45px;
+            &:hover {
+                color: $accent;
+            }
+            &::after {
+                position: absolute;
+                right: -37px;
+                content: "|";
+                color: #dfdfdf;
+                margin-right: 12px;
+            }
+        }
     }
     &__sort {
         height: 50px;
+        background-color: #f3f3f3;
     }
     &__content {
     }
@@ -231,5 +281,11 @@
                 color: $accent;
             }
         }
+    }
+}
+#price__range {
+    width: 100%;
+    &_label {
+        width: 100%;
     }
 }

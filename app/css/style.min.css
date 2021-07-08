@@ -301,7 +301,6 @@ h2 {
       color: #f16d7f; }
     .products__link_details {
       padding: 20px;
-      border: 1px solid #e8e8e8;
       background-color: #ffffff;
       border-radius: 5px; }
       .products__link_details::before {
@@ -340,11 +339,63 @@ h2 {
   .products__box {
     width: 75%; }
   .products__header {
-    height: 165px; }
+    height: 165px;
+    margin-bottom: 48px; }
   .products__select {
-    height: 115px; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 115px;
+    padding-bottom: 43px; }
+    .products__select_area {
+      width: 31%; }
+    .products__select_heading {
+      font-family: Lato;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #6f6e6e;
+      margin-bottom: 10px; }
+    .products__select_parameters {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      padding: 0; }
+      .products__select_parameters label {
+        width: 25%;
+        font-family: Lato;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        padding: 14px 0;
+        text-transform: uppercase;
+        color: #6f6e6e; }
+    .products__select_link {
+      position: relative;
+      text-decoration: none;
+      font-family: Lato;
+      font-size: 14px;
+      line-height: 26px;
+      font-weight: 400;
+      color: #6f6e6e;
+      margin-right: 45px; }
+      .products__select_link:hover {
+        color: #f16d7f; }
+      .products__select_link::after {
+        position: absolute;
+        right: -37px;
+        content: "|";
+        color: #dfdfdf;
+        margin-right: 12px; }
   .products__sort {
-    height: 50px; }
+    height: 50px;
+    background-color: #f3f3f3; }
   .products__row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -462,6 +513,11 @@ h2 {
       color: #c4c4c4; }
       .products__pagination_link:hover {
         color: #f16d7f; }
+
+#price__range {
+  width: 100%; }
+  #price__range_label {
+    width: 100%; }
 
 p {
   margin: 0; }
