@@ -110,12 +110,19 @@
         margin-bottom: 48px;
     }
     &__select {
-        display: flex;
-        justify-content: space-between;
-        height: 115px;
-        padding-bottom: 43px;
+        &_top {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 26px;
+            border: none;
+        }
+        &_bottom {
+            display: flex;
+            border: none;
+            padding: 10px 0;
+        }
         &_area {
-            width: 31%;
+            flex-basis: 32%;
         }
         &_heading {
             font-family: $ff;
@@ -130,6 +137,7 @@
             display: flex;
             flex-wrap: wrap;
             padding: 0;
+            border: none;
             & label {
                 width: 25%;
                 font-family: $ff;
@@ -161,10 +169,24 @@
                 margin-right: 12px;
             }
         }
+        &_bottom {
+            background-color: #f3f3f3;
+        }
     }
-    &__sort {
-        height: 50px;
-        background-color: #f3f3f3;
+    &__sort,
+    &__show {
+        display: flex;
+        font-family: $ff;
+        font-size: 14px;
+        line-height: 26px;
+        font-weight: 400;
+        color: #6f6e6e;
+        margin-left: 10px;
+        background-color: #ffffff;
+        & p {
+            padding: 0 10px 0 12px;
+            border-right: solid 1px #ebebeb;
+        }
     }
     &__content {
     }
@@ -179,14 +201,14 @@
         &:hover {
             box-shadow: 0px 5px 8px 0 rgba(0, 0, 0, 0.16);
         }
-        &:hover .fetured__image {
+        &:hover .products__image {
             filter: brightness(0.5);
         }
-        &:hover .fetured__product {
+        &:hover .products__product {
             filter: brightness(0.5);
             background-blend-mode: darken;
         }
-        &:hover .fetured__add {
+        &:hover .products__add {
             display: flex;
         }
     }
@@ -221,6 +243,25 @@
         width: 100%;
         position: absolute;
         top: 98px;
+        &_wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+        &_links {
+            display: flex;
+            justify-content: space-between;
+        }
+        &_small {
+            align-items: center;
+            text-decoration: none;
+            color: #fff;
+            padding: 16px;
+            border: 1px solid #fff;
+            border-radius: 3px;
+            &:hover {
+                box-shadow: 0 0 10px #fff;
+            }
+        }
         &_link {
             display: flex;
             align-items: center;
@@ -228,6 +269,8 @@
             color: #fff;
             padding: 10px;
             border: 1px solid #fff;
+            margin-bottom: 14px;
+            border-radius: 3px;
             &:hover {
                 box-shadow: 0 0 10px #fff;
             }
@@ -260,8 +303,8 @@
                 margin-left: 9px;
             }
             &:hover {
-                color: $accent;
-                background-color: #fff;
+                color: #fff;
+                background-color: $accent;
             }
         }
     }
@@ -282,6 +325,45 @@
             }
         }
     }
+    &__offer {
+        background-color: #222224;
+        &__advantages {
+            display: flex;
+            justify-content: space-between;
+            padding: 90px 0 115px;
+        }
+        &__card {
+            text-align: center;
+            flex-basis: 28%;
+            &_text {
+                font-family: $ff;
+                font-size: 14px;
+                line-height: 23px;
+                font-weight: 300;
+                letter-spacing: 0.025em;
+                color: #fbfbfb;
+            }
+        }
+        &__picture {
+            margin-bottom: 34px;
+        }
+        &__header {
+            font-family: $ff;
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 0.025em;
+            color: #fbfbfb;
+            margin-bottom: 17px;
+        }
+    }
+    &__subscribe {
+        background-image: url(../img/subsc_bg.jpg);
+        background-color: rgba(242, 242, 242, 0.5);
+        background-blend-mode: lighten;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+    }
 }
 #price__range {
     width: 100%;
@@ -299,4 +381,17 @@
             content: "$";
         }
     }
+}
+#products__sort_by,
+#products__show_count {
+    font-family: $ff;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #6f6e6e;
+    border: none;
+    outline: none;
+    padding: 0 35px 0 12px;
+    appearance: none;
+    background: url("../img/arrow_down.webp") no-repeat right 9px center;
 }
