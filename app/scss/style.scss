@@ -5,6 +5,9 @@
 p {
     margin: 0;
 }
+input {
+    outline: none;
+}
 
 .accent__text {
     color: $accent;

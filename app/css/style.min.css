@@ -637,6 +637,9 @@ h2 {
 p {
   margin: 0; }
 
+input {
+  outline: none; }
+
 .accent__text {
   color: #f16d7f; }
 
