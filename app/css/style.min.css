@@ -640,6 +640,9 @@ p {
 input {
   outline: none; }
 
+.active {
+  border-bottom: 3px solid #f16d7f; }
+
 .accent__text {
   color: #f16d7f; }
 
@@ -748,24 +751,88 @@ input {
     background-color: #fff;
     cursor: pointer; }
 
+.header__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
 .header__cart {
+  position: relative;
   margin-right: 26px;
   vertical-align: bottom; }
+  .header__cart_title {
+    list-style-type: none; }
+  .header__cart_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    padding: 20px;
+    width: 262px;
+    background-color: #ffffff;
+    border-radius: 5px; }
+  .header__cart_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .header__cart_close {
+    background-color: transparent;
+    border: none; }
+
+.header__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(237, 237, 237, 0.74); }
+  .header__card_link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .header__card_info {
+    margin-left: 14px; }
+  .header__card_title {
+    font-family: Lato;
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+    margin-bottom: 10px; }
+  .header__card_icons {
+    margin-bottom: 12px; }
+  .header__card_text {
+    font-family: Lato;
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #f16d7f; }
+    .header__card_text span {
+      font-size: 10px; }
 
 .header__account {
   padding-top: 13px;
   padding-bottom: 13px;
   padding-left: 19px;
-  padding-right: 29px;
+  padding-right: 16px;
   background-color: #f16d7f;
   font-family: Lato;
   font-size: 15px;
-  line-height: 32px;
   font-weight: 400;
   letter-spacing: 0.025em;
   color: #ffffff;
   border: 1px solid #f16d7f;
+  border-radius: 3px;
   cursor: pointer; }
+  .header__account .fa {
+    margin-left: 8px; }
 
 .header__account:hover {
   background-color: #ffff;

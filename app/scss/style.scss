@@ -8,7 +8,9 @@ p {
 input {
     outline: none;
 }
-
+.active {
+    border-bottom: 3px solid $accent;
+}
 .accent__text {
     color: $accent;
 }
@@ -111,25 +113,85 @@ input {
         }
     }
     &__right {
+        display: flex;
+        align-items: center;
     }
     &__cart {
+        position: relative;
         margin-right: 26px;
         vertical-align: bottom;
+        &_title {
+            list-style-type: none;
+        }
+        &_box {
+            display: flex;
+            position: absolute;
+            padding: 20px;
+            width: 262px;
+            background-color: #ffffff;
+            border-radius: 5px;
+        }
+        &_content {
+            display: flex;
+        }
+
+        &_close {
+            background-color: transparent;
+            border: none;
+        }
+    }
+    &__card {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-bottom: 16px;
+        border-bottom: 1px solid rgba(237, 237, 237, 0.74);
+        &_link {
+            display: flex;
+        }
+        &_info {
+            margin-left: 14px;
+        }
+        &_title {
+            font-family: $ff;
+            font-size: 12px;
+            line-height: 1.2;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #222222;
+            margin-bottom: 10px;
+        }
+        &_icons {
+            margin-bottom: 12px;
+        }
+        &_text {
+            font-family: Lato;
+            font-size: 12px;
+            line-height: 1.2;
+            font-weight: 400;
+            color: $accent;
+            span {
+                font-size: 10px;
+            }
+        }
     }
     &__account {
         padding-top: 13px;
         padding-bottom: 13px;
         padding-left: 19px;
-        padding-right: 29px;
+        padding-right: 16px;
         background-color: $accent;
         font-family: $ff;
         font-size: 15px;
-        line-height: 32px;
         font-weight: 400;
         letter-spacing: 0.025em;
         color: #ffffff;
         border: 1px solid $accent;
+        border-radius: 3px;
         cursor: pointer;
+        & .fa {
+            margin-left: 8px;
+        }
     }
     &__account:hover {
         background-color: #ffff;
