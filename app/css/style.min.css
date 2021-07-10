@@ -1152,10 +1152,14 @@ input {
     margin-bottom: 40px; }
   .fetured__item {
     width: 23%;
-    position: relative; }
+    position: relative;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
     .fetured__item:hover {
       -webkit-box-shadow: 0px 5px 8px 0 rgba(0, 0, 0, 0.16);
-              box-shadow: 0px 5px 8px 0 rgba(0, 0, 0, 0.16); }
+              box-shadow: 0px 5px 8px 0 rgba(0, 0, 0, 0.16);
+      -webkit-transform: rotateX(20deg);
+              transform: rotateX(20deg); }
     .fetured__item:hover .fetured__image {
       -webkit-filter: brightness(0.5);
               filter: brightness(0.5); }
