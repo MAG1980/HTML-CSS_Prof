@@ -767,6 +767,7 @@ input {
     text-align: center;
     font-family: sans-serif; }
   .subscribe__heading_text {
+    font-family: Lato;
     margin: 0;
     font-size: 14px;
     line-height: 24px;
