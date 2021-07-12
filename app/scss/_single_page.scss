@@ -175,6 +175,14 @@ h2 {
             background-color: #ffffff;
             border: 1px solid $accent;
             margin-bottom: 122px;
+            cursor: pointer;
+            transition: 0.3s;
+            &:hover {
+                background-color: $accent;
+                .product__add_text {
+                    color: #fff;
+                }
+            }
         }
         &_box {
             display: flex;

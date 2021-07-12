@@ -28,6 +28,10 @@
         color: #222222;
         margin: 33px 0 39px 9px;
         cursor: pointer;
+        transition: 0.3s;
+        &:hover {
+            color: $accent;
+        }
     }
     &__forms {
         display: flex;

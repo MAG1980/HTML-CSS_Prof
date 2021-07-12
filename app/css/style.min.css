@@ -1134,7 +1134,14 @@ h2 {
       width: 100%;
       background-color: #ffffff;
       border: 1px solid #f16d7f;
-      margin-bottom: 122px; }
+      margin-bottom: 122px;
+      cursor: pointer;
+      -webkit-transition: 0.3s;
+      transition: 0.3s; }
+      .product__add button:hover {
+        background-color: #f16d7f; }
+        .product__add button:hover .product__add_text {
+          color: #fff; }
     .product__add_box {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1612,7 +1619,11 @@ h2 {
     text-transform: uppercase;
     color: #222222;
     margin: 33px 0 39px 9px;
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    .checkout__title:hover {
+      color: #f16d7f; }
   .checkout__forms {
     display: -webkit-box;
     display: -ms-flexbox;
