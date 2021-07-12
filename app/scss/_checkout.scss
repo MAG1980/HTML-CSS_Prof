@@ -1,9 +1,17 @@
 .checkout {
     background-color: #fff;
-    padding: 90px 15px 125px;
+    padding: 90px 15px;
     &__list {
+        list-style-type: decimal-leading-zero;
+        font-family: $ff;
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #222222;
     }
     &__item {
+        border-bottom: 1px solid #e8e8e8;
     }
     &__row {
     }
@@ -18,10 +26,12 @@
         font-weight: 700;
         text-transform: uppercase;
         color: #222222;
-        margin-bottom: 40px;
+        margin: 33px 0 39px 9px;
+        cursor: pointer;
     }
     &__forms {
         display: flex;
+        padding-bottom: 80px;
     }
     &__choice-form {
         width: 50%;
@@ -80,6 +90,7 @@
         color: #4a4a4a;
         background-color: #ffffff;
         border: 1px solid #eaeaea;
+        cursor: pointer;
     }
     &__email,
     &__password {

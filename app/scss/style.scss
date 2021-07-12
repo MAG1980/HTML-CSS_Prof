@@ -1,9 +1,4 @@
-@import "_single_page";
-@import "_products";
-@import "_shopping_cart";
-@import "_checkout";
 @import "_variables";
-
 p {
     margin: 0;
 }
@@ -16,10 +11,6 @@ input {
 .active {
     border-bottom: 3px solid $accent;
 }
-.accent__text {
-    color: $accent;
-}
-
 .container {
     margin: 0 auto;
     max-width: 1140px;
@@ -951,4 +942,17 @@ input {
         text-decoration: none;
         cursor: pointer;
     }
+}
+@import "_single_page";
+@import "_products";
+@import "_shopping_cart";
+@import "_checkout";
+.mt0 {
+    margin-top: 0;
+}
+.pt0 {
+    padding-top: 0;
+}
+.accent__text {
+    color: $accent;
 }
