@@ -186,6 +186,7 @@ input {
         &_link {
             display: flex;
             width: 100%;
+            text-decoration: none;
             &:hover {
                 filter: brightness(0.5);
                 background-blend-mode: darken;
@@ -307,6 +308,7 @@ input {
             border: 1px solid #e8e8e8;
             background-color: #ffffff;
             border-radius: 5px;
+            z-index: 10;
             &:last-of-type {
                 margin-right: 0;
             }
@@ -950,6 +952,9 @@ input {
 @import "_checkout";
 .mt0 {
     margin-top: 0;
+}
+.mb0 {
+    margin-bottom: 0;
 }
 .pt0 {
     padding-top: 0;
