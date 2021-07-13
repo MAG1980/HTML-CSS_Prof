@@ -279,419 +279,145 @@
             </ul>
         </div>
     </nav>
-    <section class="products container">
-        <nav class="products__nav">
-            <details class="products__dropdown">
-                <summary class="products__dropdown_title">Category</summary>
-                <div class="products__link_details">
-                    <div class="products__link_list">
-                        <a href="#" class="products__link_link">Accessories</a>
-                        <a href="#" class="products__link_link">Bags</a>
-                        <a href="#" class="products__link_link">Denim</a>
-                        <a href="#" class="products__link_link">Hoodies & Sweatshirts</a>
-                        <a href="#" class="products__link_link">Jackets & Coats</a>
-                        <a href="#" class="products__link_link">Pants</a>
-                        <a href="#" class="products__link_link">Polos</a>
-                        <a href="#" class="products__link_link">Shirts</a>
-                        <a href="#" class="products__link_link">Shoes</a>
-                        <a href="#" class="products__link_link">Shorts</a>
-                        <a href="#" class="products__link_link">Sweaters & Knits</a>
-                        <a href="#" class="products__link_link">T-Shirts</a>
-                        <a href="#" class="products__link_link">Tanks</a>
-                    </div>
-                </div>
-            </details>
-            <details class="products__dropdown">
-                <summary class="products__dropdown_title">BRAND</summary>
-                <div class="products__link_details">
-                    <div class="products__link_list">
-                        <a href="#" class="products__link_link">Accessories</a>
-                        <a href="#" class="products__link_link">Bags</a>
-                        <a href="#" class="products__link_link">Denim</a>
-                        <a href="#" class="products__link_link">Hoodies & Sweatshirts</a>
-                        <a href="#" class="products__link_link">Jackets & Coats</a>
-                        <a href="#" class="products__link_link">Pants</a>
-                        <a href="#" class="products__link_link">Polos</a>
-                        <a href="#" class="products__link_link">Shirts</a>
-                        <a href="#" class="products__link_link">Shoes</a>
-                        <a href="#" class="products__link_link">Shorts</a>
-                        <a href="#" class="products__link_link">Sweaters & Knits</a>
-                        <a href="#" class="products__link_link">T-Shirts</a>
-                        <a href="#" class="products__link_link">Tanks</a>
-                    </div>
-                </div>
-            </details>
-            <details class="products__dropdown">
-                <summary class="products__dropdown_title">dESIGNER</summary>
-                <div class="products__link_details">
-                    <div class="products__link_list">
-                        <a href="#" class="products__link_link">Accessories</a>
-                        <a href="#" class="products__link_link">Bags</a>
-                        <a href="#" class="products__link_link">Denim</a>
-                        <a href="#" class="products__link_link">Hoodies & Sweatshirts</a>
-                        <a href="#" class="products__link_link">Jackets & Coats</a>
-                        <a href="#" class="products__link_link">Pants</a>
-                        <a href="#" class="products__link_link">Polos</a>
-                        <a href="#" class="products__link_link">Shirts</a>
-                        <a href="#" class="products__link_link">Shoes</a>
-                        <a href="#" class="products__link_link">Shorts</a>
-                        <a href="#" class="products__link_link">Sweaters & Knits</a>
-                        <a href="#" class="products__link_link">T-Shirts</a>
-                        <a href="#" class="products__link_link">Tanks</a>
-                    </div>
-                </div>
-            </details>
-        </nav>
-        <div class="products__box">
-            <div class="products__header">
-                <form class="products__select" oninput=" result.value=(price__range.value)" action="#"">
-                    <fieldset class=" products__select_top">
-                    <nav class=" products__select_area">
-                        <h3 class="products__select_heading">Trending now</h3>
-                        <div class="products__select_parameters">
-                            <a href="#" class="products__select_link">Bohemian</a>
-                            <a href="#" class="products__select_link">Floral</a>
-                            <a href="#" class="products__select_link">Lace</a>
-                            <a href="#" class="products__select_link">Floral</a>
-                            <a href="#" class="products__select_link">Lace</a>
-                            <a href="#" class="products__select_link">Bohemian</a>
 
-                        </div>
-                    </nav>
-                    <div class="products__select_area">
-                        <h3 class="products__select_heading">Size</h3>
-                        <fieldset class="products__select_parameters">
-                            <label for="XXS">
-                                <input id="XXS" type="checkbox">XXS</label>
-                            <label for="XS">
-                                <input id="XS" type="checkbox">XS</label>
-                            <label for="S">
-                                <input id="S" type="checkbox">S</label>
-                            <label for="M">
-                                <input id="M" type="checkbox">M</label>
-                            <label for="L">
-                                <input id="L" type="checkbox">L</label>
-                            <label for="XL">
-                                <input id="XL" type="checkbox">XL</label>
-                            <label for="XXL">
-                                <input id="XXL" type="checkbox">XXL</label>
-                        </fieldset>
+    <section class="cart-table">
+        <form class="cart-table__box container">
+            <div class="cart-table__content">
+                <header class="cart-table__row cart-table__row_header">
+                    <div class="cart-table__product-details"> Product Details </div>
+                    <div class="cart-table__text cart-table__text_header">unite Price</div>
+                    <div class="cart-table__text cart-table__text_header">Quantity</div>
+                    <div class="cart-table__text cart-table__text_header">shipping</div>
+                    <div class="cart-table__text cart-table__text_header">Subtotal</div>
+                    <div class="cart-table__text cart-table__text_header">ACTION</div>
+                </header>
+                <div class="cart-table__row">
+                    <div class="cart-table__product-details">
+                        <a class="header__card_link" href="single_page.html">
+                            <img src="img/products/product_mini_3.jpg" alt="товар" class="header__card_img">
+                            <div class="header__card_info-cart">
+                                <h3 class="header__card_title-cart">Mango People T-shirt</h3>
+                                <p class="header__card_icons-cart"><i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                </p>
+                                <p class="header__card_text-cart">Color: <span>Red</span></p>
+                                <p class="header__card_text-cart">Size: <span>Xll</span></p>
+                            </div>
+                        </a>
                     </div>
-                    <div class="products__select_area">
-                        <h3 class="products__select_heading">pRICE</h3>
-                        <fieldset class="products__select_parameters">
-                            <label id="price__range_label" for="price__range">
-                                <input id="price__range" type="range" min="0" max="400" step="1">
-                                <output id="price__range_output" name="result" for="price__range">52</output>
-                        </fieldset>
-                    </div>
-                    </fieldset>
+                    <p class="cart-table__text cart-table__text_string"> $150 </p>
+                    <div class="cart-table__quantuty">
+                        <input class="cart-table__quantuty_input" type="number" step="1" min="1" max="10"
+                            name="quantuty">
 
-                    <fieldset class="products__select_bottom">
-                        <div class="products__sort">
-                            <p>Sort By</p>
-                            <select name="sort" id="products__sort_by">
-                                <option value="name">Name</option>
-                                <option value="size">Size</option>
-                                <option value="color">Color</option>
-                                <option value="gender">Gender</option>
-                            </select>
-                        </div>
-                        <div class="products__show">
-                            <p>Show</p>
-                            <select name="show" id="products__show_count">
-                                <option value="name">03</option>
-                                <option value="size">06</option>
-                                <option value="color">09</option>
-                                <option value="gender">12</option>
-                            </select>
-                        </div>
-                    </fieldset>
-                </form>
-            </div>
-            <div class="products__content">
-                <div class="products__row">
-                    <div class="products__item">
-                        <a class="products__product" href="single_page.html">
-                            <img src="img/products/product_13.jpg" alt="товар" class="products__image">
-                            <p class="products__name">Mango People T-shirt</p>
-                            <p class="products__price">$52.00</p>
-                        </a>
-                        <div class="products__add">
-                            <div class="products__add_wrapper">
-                                <a class="products__add_link" href="cart_page.html">
-                                    <img src="img/products/add_to_cart.png" alt="корзина" class="products__add_icon">
-                                    <p class="products__add_text">Add to Cart</p>
-                                </a>
-                                <div class="products__add_links">
-                                    <a class="products__add_small" href="cart_page.html">
-                                        <img src="img/icons/arrow_u_d.png" alt="обновить" class="products__add_icon">
-                                    </a>
-                                    <a class="products__add_small" href="cart_page.html">
-                                        <img src="img/icons/heart.png" alt="добавить в избранное"
-                                            class="products__add_icon">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        </input>
                     </div>
-                    <div class="products__item">
-                        <a class="products__product" href="single_page.html">
-                            <img src="img/products/product_14.jpg" alt="товар" class="products__image">
-                            <p class="products__name">Mango People T-shirt</p>
-                            <p class="products__price">$52.00</p>
-                        </a>
-                        <div class="products__add">
-                            <div class="products__add_wrapper">
-                                <a class="products__add_link" href="cart_page.html">
-                                    <img src="img/products/add_to_cart.png" alt="корзина" class="products__add_icon">
-                                    <p class="products__add_text">Add to Cart</p>
-                                </a>
-                                <div class="products__add_links">
-                                    <a class="products__add_small" href="cart_page.html">
-                                        <img src="img/icons/arrow_u_d.png" alt="обновить" class="products__add_icon">
-                                    </a>
-                                    <a class="products__add_small" href="cart_page.html">
-                                        <img src="img/icons/heart.png" alt="добавить в избранное"
-                                            class="products__add_icon">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="products__item">
-                        <a class="products__product" href="single_page.html">
-                            <img src="img/products/product_15.jpg" alt="товар" class="products__image">
-                            <p class="products__name">Mango People T-shirt</p>
-                            <p class="products__price">$52.00</p>
-                        </a>
-                        <div class="products__add">
-                            <div class="products__add_wrapper">
-                                <a class="products__add_link" href="cart_page.html">
-                                    <img src="img/products/add_to_cart.png" alt="корзина" class="products__add_icon">
-                                    <p class="products__add_text">Add to Cart</p>
-                                </a>
-                                <div class="products__add_links">
-                                    <a class="products__add_small" href="cart_page.html">
-                                        <img src="img/icons/arrow_u_d.png" alt="обновить" class="products__add_icon">
-                                    </a>
-                                    <a class="products__add_small" href="cart_page.html">
-                                        <img src="img/icons/heart.png" alt="добавить в избранное"
-                                            class="products__add_icon">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <p class="cart-table__text cart-table__text_string"> FREE</p>
+                    <p class="cart-table__text cart-table__text_string">$300</p>
+                    <button class="cart-table__action header__card_close" type="button"><i class="fa fa-times-circle"
+                            aria-hidden="true"></i></button>
                 </div>
-                <div class="products__row">
-                    <div class="products__item">
-                        <a class="products__product" href="single_page.html">
-                            <img src="img/products/product_16.jpg" alt="товар" class="products__image">
-                            <p class="products__name">Mango People T-shirt</p>
-                            <p class="products__price">$52.00</p>
-                        </a>
-                        <div class="products__add">
-                            <div class="products__add_wrapper">
-                                <a class="products__add_link" href="cart_page.html">
-                                    <img src="img/products/add_to_cart.png" alt="корзина" class="products__add_icon">
-                                    <p class="products__add_text">Add to Cart</p>
-                                </a>
-                                <div class="products__add_links">
-                                    <a class="products__add_small" href="cart_page.html">
-                                        <img src="img/icons/arrow_u_d.png" alt="обновить" class="products__add_icon">
-                                    </a>
-                                    <a class="products__add_small" href="cart_page.html">
-                                        <img src="img/icons/heart.png" alt="добавить в избранное"
-                                            class="products__add_icon">
-                                    </a>
-                                </div>
+                <div class="cart-table__row">
+                    <div class="cart-table__product-details">
+                        <a class="header__card_link" href="single_page.html">
+                            <img src="img/products/product_mini_4.jpg" alt="товар" class="header__card_img">
+                            <div class="header__card_info-cart">
+                                <h3 class="header__card_title-cart">Mango People T-shirt</h3>
+                                <p class="header__card_icons-cart"><i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                </p>
+                                <p class="header__card_text-cart">Color: <span>Red</span></p>
+                                <p class="header__card_text-cart">Size: <span>Xll</span></p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="products__item">
-                        <a class="products__product" href="single_page.html">
-                            <img src="img/products/product_17.jpg" alt="товар" class="products__image">
-                            <p class="products__name">Mango People T-shirt</p>
-                            <p class="products__price">$52.00</p>
                         </a>
-                        <div class="products__add">
-                            <div class="products__add_wrapper">
-                                <a class="products__add_link" href="cart_page.html">
-                                    <img src="img/products/add_to_cart.png" alt="корзина" class="products__add_icon">
-                                    <p class="products__add_text">Add to Cart</p>
-                                </a>
-                                <div class="products__add_links">
-                                    <a class="products__add_small" href="cart_page.html">
-                                        <img src="img/icons/arrow_u_d.png" alt="обновить" class="products__add_icon">
-                                    </a>
-                                    <a class="products__add_small" href="cart_page.html">
-                                        <img src="img/icons/heart.png" alt="добавить в избранное"
-                                            class="products__add_icon">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-                    <div class="products__item">
-                        <a class="products__product" href="single_page.html">
-                            <img src="img/products/product_18.jpg" alt="товар" class="products__image">
-                            <p class="products__name">Mango People T-shirt</p>
-                            <p class="products__price">$52.00</p>
-                        </a>
-                        <div class="products__add">
-                            <div class="products__add_wrapper">
-                                <a class="products__add_link" href="cart_page.html">
-                                    <img src="img/products/add_to_cart.png" alt="корзина" class="products__add_icon">
-                                    <p class="products__add_text">Add to Cart</p>
-                                </a>
-                                <div class="products__add_links">
-                                    <a class="products__add_small" href="cart_page.html">
-                                        <img src="img/icons/arrow_u_d.png" alt="обновить" class="products__add_icon">
-                                    </a>
-                                    <a class="products__add_small" href="cart_page.html">
-                                        <img src="img/icons/heart.png" alt="добавить в избранное"
-                                            class="products__add_icon">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                    <p class="cart-table__text cart-table__text_string"> $150 </p>
+                    <div class="cart-table__quantuty">
+                        <input class="cart-table__quantuty_input" type="number" step="1" min="1" max="10"
+                            name="quantuty">
+
+                        </input>
                     </div>
+                    <p class="cart-table__text cart-table__text_string"> FREE</p>
+                    <p class="cart-table__text cart-table__text_string">$300</p>
+                    <button class="cart-table__action header__card_close" type="button"><i class="fa fa-times-circle"
+                            aria-hidden="true"></i></button>
                 </div>
-                <div class="products__row">
-                    <div class="products__item">
-                        <a class="products__product" href="single_page.html">
-                            <img src="img/products/product_19.jpg" alt="товар" class="products__image">
-                            <p class="products__name">Mango People T-shirt</p>
-                            <p class="products__price">$52.00</p>
-                        </a>
-                        <div class="products__add">
-                            <div class="products__add_wrapper">
-                                <a class="products__add_link" href="cart_page.html">
-                                    <img src="img/products/add_to_cart.png" alt="корзина" class="products__add_icon">
-                                    <p class="products__add_text">Add to Cart</p>
-                                </a>
-                                <div class="products__add_links">
-                                    <a class="products__add_small" href="cart_page.html">
-                                        <img src="img/icons/arrow_u_d.png" alt="обновить" class="products__add_icon">
-                                    </a>
-                                    <a class="products__add_small" href="cart_page.html">
-                                        <img src="img/icons/heart.png" alt="добавить в избранное"
-                                            class="products__add_icon">
-                                    </a>
-                                </div>
+                <div class="cart-table__row">
+                    <div class="cart-table__product-details">
+                        <a class="header__card_link" href="single_page.html">
+                            <img src="img/products/product_mini_5.jpg" alt="товар" class="header__card_img">
+                            <div class="header__card_info-cart">
+                                <h3 class="header__card_title-cart">Mango People T-shirt</h3>
+                                <p class="header__card_icons-cart"><i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                </p>
+                                <p class="header__card_text-cart">Color: <span>Red</span></p>
+                                <p class="header__card_text-cart">Size: <span>Xll</span></p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="products__item">
-                        <a class="products__product" href="single_page.html">
-                            <img src="img/products/product_20.jpg" alt="товар" class="products__image">
-                            <p class="products__name">Mango People T-shirt</p>
-                            <p class="products__price">$52.00</p>
                         </a>
-                        <div class="products__add">
-                            <div class="products__add_wrapper">
-                                <a class="products__add_link" href="cart_page.html">
-                                    <img src="img/products/add_to_cart.png" alt="корзина" class="products__add_icon">
-                                    <p class="products__add_text">Add to Cart</p>
-                                </a>
-                                <div class="products__add_links">
-                                    <a class="products__add_small" href="cart_page.html">
-                                        <img src="img/icons/arrow_u_d.png" alt="обновить" class="products__add_icon">
-                                    </a>
-                                    <a class="products__add_small" href="cart_page.html">
-                                        <img src="img/icons/heart.png" alt="добавить в избранное"
-                                            class="products__add_icon">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-                    <div class="products__item">
-                        <a class="products__product" href="single_page.html">
-                            <img src="img/products/product_21.jpg" alt="товар" class="products__image">
-                            <p class="products__name">Mango People T-shirt</p>
-                            <p class="products__price">$52.00</p>
-                        </a>
-                        <div class="products__add">
-                            <div class="products__add_wrapper">
-                                <a class="products__add_link" href="cart_page.html">
-                                    <img src="img/products/add_to_cart.png" alt="корзина" class="products__add_icon">
-                                    <p class="products__add_text">Add to Cart</p>
-                                </a>
-                                <div class="products__add_links">
-                                    <a class="products__add_small" href="cart_page.html">
-                                        <img src="img/icons/arrow_u_d.png" alt="обновить" class="products__add_icon">
-                                    </a>
-                                    <a class="products__add_small" href="cart_page.html">
-                                        <img src="img/icons/heart.png" alt="добавить в избранное"
-                                            class="products__add_icon">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                    <p class="cart-table__text cart-table__text_string"> $150 </p>
+                    <div class="cart-table__quantuty">
+                        <input class="cart-table__quantuty_input" type="number" step="1" min="1" max="10"
+                            name="quantuty">
+
+                        </input>
                     </div>
-                </div>
-                <div class="products__button">
-                    <div class="products__pagination">
-                        <a href="" class="products__pagination_link"><i class="fa fa-angle-left"
-                                aria-hidden="true"></i></a>
-                        <a href="" class="products__pagination_link">1</a>
-                        <a href="" class="products__pagination_link">2</a>
-                        <a href="" class="products__pagination_link">3</a>
-                        <a href="" class="products__pagination_link">4</a>
-                        <a href="" class="products__pagination_link">5</a>
-                        <a href="" class="products__pagination_link">6</a>
-                        <a href="" class="products__pagination_link">...</a>
-                        <a href="" class="products__pagination_link">20</a>
-                        <a href="" class="products__pagination_link"><i class="fa fa-angle-right"
-                                aria-hidden="true"></i></a>
-                    </div>
-                    <a href="#" class="products__button_link">View All</a>
+                    <p class="cart-table__text cart-table__text_string"> FREE</p>
+                    <p class="cart-table__text cart-table__text_string">$300</p>
+                    <button class="cart-table__action header__card_close" type="button"><i class="fa fa-times-circle"
+                            aria-hidden="true"></i></button>
                 </div>
             </div>
-        </div>
+            <div class="cart-table__buttons">
+                <button class="cart-table__button cart-table__button-reset" type="reset">cLEAR SHOPPING CART</button>
+                <button class="cart-table__button cart-table__button-continue">cONTINUE sHOPPING</button>
+            </div>
+            <div class="cart-table__forms">
+                <div class="cart-table__item">
+                    <h4 class="cart-table__item-title">Shipping Adress</h4>
+                    <select class="cart-table__item-input" name="country" id="country">
+                        <option value="Bangladesh">Bangladesh</option>
+                        <option value="USA">USA</option>
+                        <option value="UK">UK</option>
+                        <option value="Belgium">Belgium</option>
+                        <option value="Russia">Russia</option>
+                    </select>
+                    <input class="cart-table__item-input" type="text" placeholder="State">
+                    <input class="cart-table__item-input mb0" type="text" placeholder="Postcode / Zip">
+                </div>
+                <div class="cart-table__item">
+                    <h4 class="cart-table__item-title">coupon discount</h4>
+                    <div class="cart-table__item-text">Enter your coupon code if you have one</div>
+                    <input class="cart-table__item-input" type="text" placeholder="State">
+                    <a class="cart-table__item-button" href="#">Apply coupon</a>
+                </div>
+                <div class="cart-table__item cart-table__proceed">
+                    <p class="cart-table__proceed-text">Sub total<span>$900</span></p>
+                    <p class="cart-table__proceed-total-text">GRAND TOTAL<span>$900</span>
+                    </p>
+                    <a class="cart-table__proceed-button" href="#">proceed to checkout</a>
+                </div>
+            </div>
+            <a class="cart-table__item-button" href="#">get a quote</a>
+
+
+        </form>
+
+
     </section>
-    <section class="products__offer">
-        <div class="products__offer__advantages container">
-            <div class="products__offer__card">
 
-                <img class="products__offer__picture" src="img/icons/car.png"></img>
-
-                <div class="products__offer__card_text">
-                    <h3 class="products__offer__header">Free Delivery</h3>
-                    <p class="products__offer__descr">Worldwide delivery on all. Authorit tively morph next-generation
-                        innov tion
-                        with extensive models.</p>
-                </div>
-            </div>
-            <div class="products__offer__card">
-
-                <img class="products__offer__picture" src="img/icons/precent.png"></img>
-
-
-                <div class="products__offer__card_text">
-                    <h3 class="products__offer__header">Sales & discounts</h3>
-                    <p class="products__offer__descr">Worldwide delivery on all. Authorit tively morph next-generation
-                        innov tion
-                        with extensive models.</p>
-                </div>
-            </div>
-            <div class="products__offer__card">
-
-                <img class="products__offer__picture" src="img/icons/crown.png"></img>
-
-
-                <div class="products__offer__card_text">
-                    <h3 class="products__offer__header">Quality assurance</h3>
-                    <p class="products__offer__descr">Worldwide delivery on all. Authorit tively morph next-generation
-                        innov tion
-                        with extensive models.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="products__subscribe">
+    <section class="subscribe mt0">
         <div class="container subscribe__wrapper">
             <div class="subscribe__vertical_line">
                 <figure class="subscribe__quote">
@@ -731,8 +457,9 @@
                     <div class="footer__top_left">
                         <div class="footer__brand">
                             <div class="footer__logo">
-                                <a href="#"><img src="img/logo.png" alt="Логотип" class="footer__logo_image"></a>
-                                <a href="#" class="footer__brand_text">BRAN<span>D</span></a>
+                                <a href="index.html"><img src="img/logo.png" alt="Логотип"
+                                        class="footer__logo_image"></a>
+                                <a href="index.html" class="footer__brand_text">BRAN<span>D</span></a>
                             </div>
 
                             <div class="footer__text">

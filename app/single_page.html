@@ -53,20 +53,68 @@
 
                         <form action="#" class="header__search_form">
                             <input class="header__search_text" type="text" placeholder="Search for Item...">
-                            <input class="header__search_scope" type="button" src="img/scope.png">
+                            <button class="header__search_scope" type="submit" src="img/scope.png">
                         </form>
 
                     </div>
                 </div>
                 <div class="header__right">
-                    <img src="img/cart.svg" class="header__cart"></img>
-                    <a class="header__account">My Account</a>
+
+                    <details class="header__cart">
+                        <summary class="header__cart_title"><img src="img/cart.svg"></img>
+                        </summary>
+                        <div class="header__cart_box">
+                            <div class="header__card">
+                                <a class="header__card_link">
+                                    <img src="img/products/product_mini_1.jpg" alt="товар" class="header__card_img">
+                                    <div class="header__card_info">
+                                        <h3 class="header__card_title">Rebox Zane</h3>
+                                        <p class="header__card_icons"><i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                        </p>
+                                        <p class="header__card_text">1 x $250</p>
+                                    </div>
+                                </a>
+                                <button class="header__card_close" type="button"><i class="fa fa-times-circle"
+                                        aria-hidden="true"></i></button>
+                            </div>
+                            <div class="header__card">
+                                <a class="header__card_link">
+                                    <img src="img/products/product_mini_2.jpg" alt="товар" class="header__card_img">
+                                    <div class="header__card_info">
+                                        <h3 class="header__card_title">Rebox Zane</h3>
+                                        <p class="header__card_icons"><i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                        </p>
+                                        <p class="header__card_text">1 x $250</p>
+                                    </div>
+                                </a>
+                                <button class="header__card_close" type="button"><i class="fa fa-times-circle"
+                                        aria-hidden="true"></i></button>
+                            </div>
+                            <div class="header__cart_summary">
+                                <p>TOTAL</p>
+                                <p>$500.00</p>
+                            </div>
+                            <a href="checkout.html" class="header__button header__button_checkout">Checkout</a>
+                            <a href="shopping_cart.html" class="header__button header__button_go-to-cart">Go to cart</a>
+
+
+                        </div>
+                    </details>
+                    <a class="header__account">My Account <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                 </div>
             </div>
 
             <nav class="header__nav">
                 <ul class="header__menu">
-                    <li class="header__menu_list"><a class="header__link" href="#">HOME</a></li>
+                    <li class="header__menu_list"><a class="header__link active" href="#">HOME</a></li>
                     <li class="header__menu_list"><a class="header__link" href="3">MAN</a>
                         <div class="header__link_box">
                             <div class="header__link_list">
@@ -222,7 +270,8 @@
         <div class="arrivals__box container">
             <h2 class="arrivals__heading">New Arrivals</h2>
             <ul class="arrivals__breadcrumbs">
-                <li class="arrivals__breadcrumbs_item"><a class="arrivals__breadcrumbs_link" href="#">Home</a></li>
+                <li class="arrivals__breadcrumbs_item"><a class="arrivals__breadcrumbs_link" href="index.html">Home</a>
+                </li>
                 <li class="arrivals__breadcrumbs_item"><a class="arrivals__breadcrumbs_link" href="#">Men</a></li>
                 <li class="arrivals__breadcrumbs_item arrivals__breadcrumbs_item_active" aria-current="page">New
                     Arrivals
