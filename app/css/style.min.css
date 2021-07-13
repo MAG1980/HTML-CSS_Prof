@@ -1891,6 +1891,7 @@ h2 {
     height: 45px;
     background-color: #ffffff;
     border: 1px solid #eaeaea;
+    padding-left: 20px;
     margin-top: 16px; }
   .checkout__question {
     display: inline-block;
