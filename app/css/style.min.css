@@ -1164,7 +1164,16 @@ h2 {
       font-weight: bold;
       color: #ef5b70; }
   .product__property {
-    width: 100%; }
+    width: 100%;
+    height: 35px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    padding-left: 15px;
+    font-family: Lato;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #bcbcbc; }
 
 .like {
   padding: 119px 0 73px; }
