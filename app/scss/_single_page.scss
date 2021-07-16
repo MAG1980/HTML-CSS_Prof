@@ -205,6 +205,7 @@ h2 {
         }
     }
     &__property {
+        outline: none;
         text-align: left;
         appearance: none;
         width: 100%;
@@ -232,9 +233,18 @@ h2 {
         & span.blue {
             background-color: blue;
         }
-        &_padding {
+        &_details {
             position: relative;
             padding-left: 0;
+            &::after {
+                position: absolute;
+                font-size: small;
+                font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+                font-weight: 600;
+                content: "\f107";
+                top: 2px;
+                right: 14px;
+            }
         }
     }
     &__property-wrapper {
@@ -242,6 +252,24 @@ h2 {
         position: absolute;
         top: 0;
         border: 1px solid #eaeaea;
+    }
+    &__size-wrapper {
+        position: relative;
+        &::after {
+            color: #bcbcbc;
+            font-size: small;
+            position: absolute;
+            font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+            font-weight: 600;
+            content: "\f107";
+            top: 13px;
+            right: 14px;
+        }
+    }
+    &__property[open] {
+        &::after {
+            content: "\f106";
+        }
     }
     &__property-value {
         list-style-type: none;
@@ -259,14 +287,6 @@ h2 {
                 right: 14px;
             }
         }
-    }
-}
-select.product__property {
-    position: relative;
-    outline: none;
-    &::after {
-        display: block;
-        content: url(../img/boy_in_jacet.webp);
     }
 }
 .like {
