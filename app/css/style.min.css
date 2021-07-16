@@ -1164,6 +1164,10 @@ h2 {
       font-weight: bold;
       color: #ef5b70; }
   .product__property {
+    text-align: left;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     width: 100%;
     height: 35px;
     background-color: #ffffff;
@@ -1171,9 +1175,48 @@ h2 {
     padding-left: 15px;
     font-family: Lato;
     font-size: 13px;
-    line-height: 24px;
+    line-height: 35px;
     font-weight: 400;
     color: #bcbcbc; }
+    .product__property span {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      margin-right: 14px; }
+    .product__property span.red {
+      background-color: #f16d7f; }
+    .product__property span.green {
+      background-color: green; }
+    .product__property span.blue {
+      background-color: blue; }
+    .product__property_padding {
+      position: relative;
+      padding-left: 0; }
+  .product__property-wrapper {
+    width: 75%;
+    position: absolute;
+    top: 0;
+    border: 1px solid #eaeaea; }
+  .product__property-value {
+    list-style-type: none;
+    background-color: #ffffff;
+    padding-left: 14px; }
+    .product__property-value:hover {
+      background-color: #eaeaea;
+      z-index: 10; }
+    .product__property-value_summary {
+      position: relative; }
+      .product__property-value_summary .fa {
+        position: absolute;
+        top: 12px;
+        right: 14px; }
+
+select.product__property {
+  position: relative;
+  outline: none; }
+  select.product__property::after {
+    display: block;
+    content: url(../img/boy_in_jacet.webp); }
 
 .like {
   padding: 119px 0 73px; }

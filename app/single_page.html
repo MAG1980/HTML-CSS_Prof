@@ -309,15 +309,23 @@
                     <div class="product__add_box">
                         <div class="product__add_item">
                             <label for="product__color">CHOOSE COLOR</label>
-                            <select class="product__property" id="product__color">
-                                <option value="red">red</option>
-                                <option value="green">green</option>
-                                <option value="blue">blue</option>
-                            </select>
+                            <details class="product__property product__property_padding" id="product__color">
+                                <summary class="product__property-value product__property-value_summary" value="red">
+                                    <span class="red"></span> red <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </summary>
+                                <div class="product__property-wrapper">
+                                    <div class="product__property-value" value="red"> <span class="red"></span> red
+                                    </div>
+                                    <div class="product__property-value" value="green"><span class="green"></span>green
+                                    </div>
+                                    <div class="product__property-value" value="blue"><span class="blue"></span>blue
+                                    </div>
+                                </div>
+                            </details>
                         </div>
                         <div class="product__add_item">
                             <label for="product__size">CHOOSE SIZE</label>
-                            <select class="product__property" id="product__size">
+                            <select class="product__property product__property_after" id="product__size">
                                 <option value="S">S</option>
                                 <option value="M">M</option>
                                 <option value="L">L</option>
@@ -327,7 +335,8 @@
                         </div>
                         <div class="product__add_item">
                             <label for="product__quantity">QUANTITY</label>
-                            <input class="product__property" id="product__quantity" type="number" min="1">
+                            <input class="product__property" id="product__quantity" type="number" min="1"
+                                placeholder="QUANTITY">
 
                             </ш>
                         </div>
