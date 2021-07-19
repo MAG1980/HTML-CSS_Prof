@@ -66,7 +66,7 @@ input {
             border-radius: 3px 0px 0px 3px;
             cursor: pointer;
             &[open] > summary::after {
-                content: "\25B6";
+                content: "\f0da";
             }
         }
         &_title {
@@ -81,8 +81,10 @@ input {
             &::after {
                 position: absolute;
                 color: #838383;
-                content: "\25BC";
-                top: 16px;
+                content: "\f0d7";
+                font-size: 16px;
+                font-family: "FontAwesome";
+                top: 13px;
                 right: 6px;
             }
         }
@@ -340,6 +342,9 @@ input {
             width: 235px;
             padding-bottom: 8px;
             margin-bottom: 8px;
+            &_mt {
+                margin-top: 13px;
+            }
         }
         &_link {
             display: block;
@@ -350,12 +355,26 @@ input {
             font-weight: 400;
             letter-spacing: 0.025em;
             color: #646464;
+            text-transform: none;
             // padding: 10px 0;
             cursor: pointer;
             &:hover {
                 color: $accent;
             }
         }
+    }
+    &__link-img {
+        width: 100%;
+        position: absolute;
+        bottom: 5px;
+    }
+    &__link_link-img {
+        position: relative;
+    }
+    &__link-offer {
+        position: absolute;
+        bottom: 18px;
+        right: 10px;
     }
     &__dropdown_right:hover &__link_box {
         right: 0;
@@ -427,6 +446,7 @@ input {
         width: 49%;
     }
     &__item {
+        display: block;
         background-repeat: no-repeat;
         background-size: cover;
         cursor: pointer;
@@ -961,4 +981,8 @@ input {
 }
 .accent__text {
     color: $accent;
+}
+.no_m-r {
+    margin-right: 0;
+    position: relative;
 }

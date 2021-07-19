@@ -38,6 +38,9 @@ h2 {
                 position: absolute;
                 right: -10px;
             }
+            &:last-child::after {
+                content: "";
+            }
             &_active {
                 color: $accent;
                 font-weight: 900;
@@ -309,9 +312,11 @@ h2 {
             margin-bottom: 20px;
         }
         &_image {
-            height: 90%;
-            padding-top: 10px;
+            height: 100%;
             object-fit: contain;
+        }
+        &:hover {
+            box-shadow: 0px 5px 8px 0 rgba(0, 0, 0, 0.16);
         }
     }
 }

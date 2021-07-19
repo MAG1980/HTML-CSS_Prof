@@ -80,7 +80,7 @@ input {
     border-radius: 3px 0px 0px 3px;
     cursor: pointer; }
     .header__search_button[open] > summary::after {
-      content: "\25B6"; }
+      content: "\f0da"; }
   .header__search_title {
     position: relative;
     list-style-type: none;
@@ -93,8 +93,10 @@ input {
     .header__search_title::after {
       position: absolute;
       color: #838383;
-      content: "\25BC";
-      top: 16px;
+      content: "\f0d7";
+      font-size: 16px;
+      font-family: "FontAwesome";
+      top: 13px;
       right: 6px; }
   .header__search_text {
     padding: 0 0 0 16px;
@@ -351,6 +353,8 @@ input {
     width: 235px;
     padding-bottom: 8px;
     margin-bottom: 8px; }
+    .header__link_title_mt {
+      margin-top: 13px; }
   .header__link_link {
     display: block;
     text-decoration: none;
@@ -360,9 +364,23 @@ input {
     font-weight: 400;
     letter-spacing: 0.025em;
     color: #646464;
+    text-transform: none;
     cursor: pointer; }
     .header__link_link:hover {
       color: #f16d7f; }
+
+.header__link-img {
+  width: 100%;
+  position: absolute;
+  bottom: 5px; }
+
+.header__link_link-img {
+  position: relative; }
+
+.header__link-offer {
+  position: absolute;
+  bottom: 18px;
+  right: 10px; }
 
 .header__dropdown_right:hover .header__link_box {
   right: 0;
@@ -434,6 +452,7 @@ input {
   .sections__column {
     width: 49%; }
   .sections__item {
+    display: block;
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
@@ -997,6 +1016,8 @@ h2 {
         content: "/";
         position: absolute;
         right: -10px; }
+      .arrivals__breadcrumbs_item:last-child::after {
+        content: ""; }
       .arrivals__breadcrumbs_item_active {
         color: #f16d7f;
         font-weight: 900; }
@@ -1250,10 +1271,13 @@ h2 {
   margin-bottom: 20px; }
 
 .fetured__product_image {
-  height: 90%;
-  padding-top: 10px;
+  height: 100%;
   -o-object-fit: contain;
      object-fit: contain; }
+
+.fetured__product:hover {
+  -webkit-box-shadow: 0px 5px 8px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 5px 8px 0 rgba(0, 0, 0, 0.16); }
 
 .fetured__name,
 .fetured__price {
@@ -1980,3 +2004,7 @@ h2 {
 
 .accent__text {
   color: #f16d7f; }
+
+.no_m-r {
+  margin-right: 0;
+  position: relative; }
