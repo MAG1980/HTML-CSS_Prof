@@ -665,14 +665,13 @@ input {
     }
     &__card {
         display: flex;
-        flex-direction: column;
-        &_top {
-            display: flex;
-            align-items: center;
+        justify-content: space-between;
+        margin-bottom: 62px;
+        &_left {
         }
-    }
-    &__picture {
-        width: 25%;
+        &_right {
+            width: 73%;
+        }
     }
     &__card_bottom {
         display: flex;
@@ -685,8 +684,7 @@ input {
         font-weight: 700;
         letter-spacing: 0.025em;
         color: #fbfbfb;
-        padding-left: 35px;
-        width: 75%;
+        margin-bottom: 17px;
     }
     &__descr {
         font-family: $ff;
@@ -695,8 +693,6 @@ input {
         font-weight: 300;
         letter-spacing: 0.025em;
         color: #fbfbfb;
-        width: 66%;
-        padding: 0 0 0 35px;
         margin: 0;
     }
 }

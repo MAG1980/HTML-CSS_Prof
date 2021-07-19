@@ -671,19 +671,12 @@ input {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-    .offer__card_top {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
-  .offer__picture {
-    width: 25%; }
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 62px; }
+    .offer__card_right {
+      width: 73%; }
   .offer__card_bottom {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -698,8 +691,7 @@ input {
     font-weight: 700;
     letter-spacing: 0.025em;
     color: #fbfbfb;
-    padding-left: 35px;
-    width: 75%; }
+    margin-bottom: 17px; }
   .offer__descr {
     font-family: Lato;
     font-size: 14px;
@@ -707,8 +699,6 @@ input {
     font-weight: 300;
     letter-spacing: 0.025em;
     color: #fbfbfb;
-    width: 66%;
-    padding: 0 0 0 35px;
     margin: 0; }
 
 .subscribe {
