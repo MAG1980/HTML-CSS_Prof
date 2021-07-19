@@ -1328,7 +1328,9 @@ h2 {
         position: absolute;
         right: 6px;
         color: #f16d7f;
-        content: "\25BC"; }
+        content: "\f0d7";
+        font-size: 16px;
+        font-family: "FontAwesome"; }
   .products__link {
     text-decoration: none;
     padding: 19px;
