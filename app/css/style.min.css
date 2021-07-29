@@ -80,7 +80,7 @@ input {
     border-radius: 3px 0px 0px 3px;
     cursor: pointer; }
     .header__search_button[open] > summary::after {
-      content: "\25B6"; }
+      content: "\f0da"; }
   .header__search_title {
     position: relative;
     list-style-type: none;
@@ -93,8 +93,10 @@ input {
     .header__search_title::after {
       position: absolute;
       color: #838383;
-      content: "\25BC";
-      top: 16px;
+      content: "\f0d7";
+      font-size: 16px;
+      font-family: "FontAwesome";
+      top: 13px;
       right: 6px; }
   .header__search_text {
     padding: 0 0 0 16px;
@@ -351,6 +353,8 @@ input {
     width: 235px;
     padding-bottom: 8px;
     margin-bottom: 8px; }
+    .header__link_title_mt {
+      margin-top: 13px; }
   .header__link_link {
     display: block;
     text-decoration: none;
@@ -360,9 +364,23 @@ input {
     font-weight: 400;
     letter-spacing: 0.025em;
     color: #646464;
+    text-transform: none;
     cursor: pointer; }
     .header__link_link:hover {
       color: #f16d7f; }
+
+.header__link-img {
+  width: 100%;
+  position: absolute;
+  bottom: 5px; }
+
+.header__link_link-img {
+  position: relative; }
+
+.header__link-offer {
+  position: absolute;
+  bottom: 18px;
+  right: 10px; }
 
 .header__dropdown_right:hover .header__link_box {
   right: 0;
@@ -434,6 +452,7 @@ input {
   .sections__column {
     width: 49%; }
   .sections__item {
+    display: block;
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
@@ -652,19 +671,12 @@ input {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-    .offer__card_top {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
-  .offer__picture {
-    width: 25%; }
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 62px; }
+    .offer__card_right {
+      width: 73%; }
   .offer__card_bottom {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -679,8 +691,7 @@ input {
     font-weight: 700;
     letter-spacing: 0.025em;
     color: #fbfbfb;
-    padding-left: 35px;
-    width: 75%; }
+    margin-bottom: 17px; }
   .offer__descr {
     font-family: Lato;
     font-size: 14px;
@@ -688,8 +699,6 @@ input {
     font-weight: 300;
     letter-spacing: 0.025em;
     color: #fbfbfb;
-    width: 66%;
-    padding: 0 0 0 35px;
     margin: 0; }
 
 .subscribe {
@@ -997,6 +1006,8 @@ h2 {
         content: "/";
         position: absolute;
         right: -10px; }
+      .arrivals__breadcrumbs_item:last-child::after {
+        content: ""; }
       .arrivals__breadcrumbs_item_active {
         color: #f16d7f;
         font-weight: 900; }
@@ -1164,6 +1175,11 @@ h2 {
       font-weight: bold;
       color: #ef5b70; }
   .product__property {
+    outline: none;
+    text-align: left;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     width: 100%;
     height: 35px;
     background-color: #ffffff;
@@ -1171,9 +1187,62 @@ h2 {
     padding-left: 15px;
     font-family: Lato;
     font-size: 13px;
-    line-height: 24px;
+    line-height: 35px;
     font-weight: 400;
     color: #bcbcbc; }
+    .product__property span {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      margin-right: 14px; }
+    .product__property span.red {
+      background-color: #f16d7f; }
+    .product__property span.green {
+      background-color: green; }
+    .product__property span.blue {
+      background-color: blue; }
+    .product__property_details {
+      position: relative;
+      padding-left: 0; }
+      .product__property_details::after {
+        position: absolute;
+        font-size: small;
+        font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+        font-weight: 600;
+        content: "\f107";
+        top: 2px;
+        right: 14px; }
+  .product__property-wrapper {
+    width: 75%;
+    position: absolute;
+    top: 0;
+    border: 1px solid #eaeaea; }
+  .product__size-wrapper {
+    position: relative; }
+    .product__size-wrapper::after {
+      color: #bcbcbc;
+      font-size: small;
+      position: absolute;
+      font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+      font-weight: 600;
+      content: "\f107";
+      top: 13px;
+      right: 14px; }
+  .product__property[open]::after {
+    content: "\f106"; }
+  .product__property-value {
+    list-style-type: none;
+    background-color: #ffffff;
+    padding-left: 14px; }
+    .product__property-value:hover {
+      background-color: #eaeaea;
+      z-index: 10; }
+    .product__property-value_summary {
+      position: relative; }
+      .product__property-value_summary .fa {
+        position: absolute;
+        top: 12px;
+        right: 14px; }
 
 .like {
   padding: 119px 0 73px; }
@@ -1192,10 +1261,13 @@ h2 {
   margin-bottom: 20px; }
 
 .fetured__product_image {
-  height: 90%;
-  padding-top: 10px;
+  height: 100%;
   -o-object-fit: contain;
      object-fit: contain; }
+
+.fetured__product:hover {
+  -webkit-box-shadow: 0px 5px 8px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 5px 8px 0 rgba(0, 0, 0, 0.16); }
 
 .fetured__name,
 .fetured__price {
@@ -1256,7 +1328,9 @@ h2 {
         position: absolute;
         right: 6px;
         color: #f16d7f;
-        content: "\25BC"; }
+        content: "\f0d7";
+        font-size: 16px;
+        font-family: "FontAwesome"; }
   .products__link {
     text-decoration: none;
     padding: 19px;
@@ -1922,3 +1996,7 @@ h2 {
 
 .accent__text {
   color: #f16d7f; }
+
+.no_m-r {
+  margin-right: 0;
+  position: relative; }
